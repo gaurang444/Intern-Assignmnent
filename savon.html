@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Savemonk</title>
+    <link rel="stylesheet" href="savon.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body> 
+
+
+  <!--navbar section -->
+
+
+<div class="contain">
+<nav  class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"><strong>SavemonK</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" style="margin-left: 30px;">
+        
+
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" >
+          <div class="drop-container">
+            <div class="dropcontainer-element">
+              <div class="col-sm-4 ">page 1</div>
+              <div class="col-sm-4 ">page 1</div>
+              <div class="col-sm-4 ">page 1</div>
+             </div>
+             <div class="dropcontainer-element">
+              <div class="col-sm-4 ">page 1</div>
+              <div class="col-sm-4 ">page 1</div>
+              <div class="col-sm-4 ">page 1</div>
+             </div>
+            
+          </div>
+        </ul>
+      </li>
+         
+        <li><a href="#" >All Stores</a></li>
+        <l1><img src="http://d1y6bibefcioc9.cloudfront.net/img/mainlogo.svg" classs="img-responsive" style="width:50px; height:50px;"></l1>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form navbar-left">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>Search
+              </button>
+
+              <button class="btn btn-danger" style="margin-left: 20px;">Sign In</button>
+            </div>
+          </div>
+        </form>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- navbar ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div  class="container nopadding">
+<div class="container-fluid">
+        <div id="mycarousel" class="carousel slide carousel-box" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class=""></li>
+                <!-- ngRepeat: slide in HomeCtrl.slides --><li data-target="#mycarousel" data-ng-repeat="slide in HomeCtrl.slides" data-slide-to="1" class="ng-scope"></li><!-- end ngRepeat: slide in HomeCtrl.slides --><li data-target="#mycarousel" data-ng-repeat="slide in HomeCtrl.slides" data-slide-to="2" class="ng-scope"></li><!-- end ngRepeat: slide in HomeCtrl.slides --><li data-target="#mycarousel" data-ng-repeat="slide in HomeCtrl.slides" data-slide-to="3" class="ng-scope"></li><!-- end ngRepeat: slide in HomeCtrl.slides --><li data-target="#mycarousel" data-ng-repeat="slide in HomeCtrl.slides" data-slide-to="4" class="ng-scope active"></li><!-- end ngRepeat: slide in HomeCtrl.slides -->
+            </ol>
+
+            <!-- Wrapper for slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <a ui-sref="store.rates({storeName: HomeCtrl.slide0.store_name })" title="flipkart rates,coupons,deals,offers,promo codes" href="/store/flipkart/rates"><img class="img-reponsive" alt="flipkart" style="width: 100%" data-ng-src="http://d1y6bibefcioc9.cloudfront.net/fkweb.jpg" src="http://d1y6bibefcioc9.cloudfront.net/fkweb.jpg"></a>
+                    <!--<div class="carousel-caption">
+                            <h2></h2>
+                            <p></p>
+                        </div>-->
+
+                </div>
+                <!-- ngRepeat: slide in HomeCtrl.slides --><div data-ng-repeat="slide in HomeCtrl.slides" class="item ng-scope">
+                    <a ui-sref="store.rates({ storeName: slide.store_name })" title="myntra rates,coupons,deals,offers,promo codes" href="/store/myntra/rates"><img class="img-reponsive" data-ng-src="http://d1y6bibefcioc9.cloudfront.net/mweb.jpg" alt="myntra" style="width: 100%" src="http://d1y6bibefcioc9.cloudfront.net/mweb.jpg"></a>
+                    <!--<div class="carousel-caption">
+                            <h2></h2>
+                            <p></p>
+                        </div>-->
+                </div><!-- end ngRepeat: slide in HomeCtrl.slides --><div data-ng-repeat="slide in HomeCtrl.slides" class="item ng-scope">
+                    <a ui-sref="store.rates({ storeName: slide.store_name })" title="jabong rates,coupons,deals,offers,promo codes" href="/store/jabong/rates"><img class="img-reponsive" data-ng-src="http://d1y6bibefcioc9.cloudfront.net/jbweb.jpg" alt="jabong" style="width: 100%" src="http://d1y6bibefcioc9.cloudfront.net/jbweb.jpg"></a>
+                    <!--<div class="carousel-caption">
+                            <h2></h2>
+                            <p></p>
+                        </div>-->
+                </div><!-- end ngRepeat: slide in HomeCtrl.slides --><div data-ng-repeat="slide in HomeCtrl.slides" class="item ng-scope">
+                    <a ui-sref="store.rates({ storeName: slide.store_name })" title="Makemytrip hotels rates,coupons,deals,offers,promo codes" href="/store/Makemytrip%20hotels/rates"><img class="img-reponsive" data-ng-src="http://d1y6bibefcioc9.cloudfront.net/wc1.jpg" alt="Makemytrip hotels" style="width: 100%" src="http://d1y6bibefcioc9.cloudfront.net/wc1.jpg"></a>
+                    <!--<div class="carousel-caption">
+                            <h2></h2>
+                            <p></p>
+                        </div>-->
+                </div><!-- end ngRepeat: slide in HomeCtrl.slides --><div data-ng-repeat="slide in HomeCtrl.slides" class="item ng-scope active">
+                    <a ui-sref="store.rates({ storeName: slide.store_name })" title="tata cliq rates,coupons,deals,offers,promo codes" href="/store/tata%20cliq/rates"><img class="img-reponsive" data-ng-src="http://d1y6bibefcioc9.cloudfront.net/wc5.jpg" alt="tata cliq" style="width: 100%" src="http://d1y6bibefcioc9.cloudfront.net/wc5.jpg"></a>
+                    <!--<div class="carousel-caption">
+                            <h2></h2>
+                            <p></p>
+                        </div>-->
+                </div><!-- end ngRepeat: slide in HomeCtrl.slides -->
+
+
+                <!--Controls-->
+                <a class="left carousel-control" data-target="#mycarousel" role="button" data-slide="prev">
+                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#mycarousel" role="button" data-slide="next">
+                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div id="textcarousel" class="carousel slide" data-ride="carousel">
+            <div class="watermark">
+                <img class="img-responsive" src="http://savemonk.com/img/11grbon.png">
+            </div>
+            <!-- Wrapper for slides-->
+            <div class="carousel-inner" role="listbox" style="margin-top:5px;height:48px">
+                <div class="item" style="text-align:center;">
+                    <h4>Welcome to Savemonk - India's Savings Platform. </h4>
+                </div>
+                <div class="item active" style="text-align:center;">
+                    <h4>Cashback is over and above all stores discounts/offers</h4>
+                </div>
+            </div>
+
+            <!-- Carousel Control 
+                <a class="left carousel-control" data-target="#textcarousel" role="button" data-slide="prev">
+                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#textcarousel" role="button" data-slide="next">
+                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                -->
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--tEXT CAROUSEL-->
+
+
+
+
+<!--CAROUSEL ENDS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- HOT STORES-->
+
+<div class="sv-panel-heading">
+                <p style="text-align:left">
+                    </p><h4 class="sv-home-containers">HOT STORES</h4>
+                    <div style="float:right;padding-right:20px;line-height:24px;"><a ui-sref="allstores" style="color:white;font-weight:700;" href="/allstores">VIEW ALL</a></div>
+                <p></p>
+            </div>
+            <div class="container">
+
+            <div class="row">
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--END-->
+
+<div class="sv-panel-heading">
+            <p style="text-align:left">
+                </p><h4 class="sv-home-containers">TOP CASHBACK STORES</h4>
+                <div style="float:right;padding-right:20px;line-height:24px;"><a ui-sref="allstores" style="color:white;font-weight:700;" href="/allstores">VIEW ALL</a></div>
+            <p></p>
+        </div>
+
+
+
+            <div class="container">
+
+            <div class="row">
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+              <div class="scv col-md-2"></div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+        <div class="same container">
+          <div class="row">
+          <div class="col-md-12">
+            <p style="padding:15px; text-align:center; font-size:25px;font-family: 'Montserrat' ">How to get Cashback</p>
+          </div>
+            <div class="col-md-4" style="text-align: center;">
+              <img src="http://d1y6bibefcioc9.cloudfront.net/img/browse.svg" height="100" alt="Browse"><br>
+              <p class="banner-text-1">BROWSE</p>
+              <p class="banner-text-2">Find your favourite store to shop on, with also some deals.</p>
+            </div>
+            <div class="col-md-4" style="text-align:center;">
+            <img src="http://d1y6bibefcioc9.cloudfront.net/img/shop.svg" height="100" alt="Shop"><br>
+            <p class="banner-text-1">SHOP</p>
+            <p class="banner-text-2">Click via "Activate Rewards" button and our software tracks your transaction.</p>
+              
+
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+              <img src="http://d1y6bibefcioc9.cloudfront.net/img/earn.svg" height="100" alt="Earn"><br>
+              <p class="banner-text-1">EARN</p>
+              <p class="banner-text-2">Shop as usual and we will credit within 24hours, it's that simple!</p>
+              
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class=" some container">
+          
+          <p style="padding:15px;font-size:25px;font-family: 'Montserrat' ">Not enough? Refer and Earn</p>
+          <img src="http://d1y6bibefcioc9.cloudfront.net/referandearn.jpg" style="width:100%;"><br>
+          <p style="padding:15px;padding-top:0px;font-family: Montserrat;font-size: 20px;">Invite your friends to join Savemonk and earn 10% of their cashback for life. Start creating your own network by
+                    <a data-ng-show="HomeCtrl.isLoggedIn" ui-sref="AccSet.Invite-Friends" href="/accset/invite-friends" class="ng-hide"> clicking here</a>
+                    <a role="button" data-ng-hide="HomeCtrl.isLoggedIn" data-ng-click="HeadCtrl.directLogin('sm')" class=""> clicking here</a> .
+                </p>
+        
+        </div>
+      
+
+    
+      
+
+      
+
+
+
+
+      <div  class="container">
+        <div  class="jumbotron hehe">
+          <h3>We are India’s fastest growing savings platform.</h3>
+          <p class="pa">Savemonk is India’s fastest growing and most accurate Cashback platform with its association with more than 200 stores including Flipkart, Myntra,jabong, snapdeal, Makemytrip, Dominos, Swiggy etc. With its website platform and android app, anyone can save money in form of cashback on all their online transactions.</p>
+          
+          
+          <h3>How are we different from other coupon and cashback websites?</h3>
+           <p class="pa">Other coupon websites just deal with a database of coupons, Savemonk has its tracking software integrated with more than 200 stores and credits cashback on all your online transactions, we are expanding in-store too very soon. Cashback varies from 2% to 40% depending on what is offered from partner websites and this cashback can be redeemed to your bank account/ digital wallet.</p>
+
+
+
+           <h3>How do we give you cashback?</h3>
+            <p class="pa">Other coupon websites just deal with a database of coupons, Savemonk has its tracking software integrated with more than 200 stores and credits cashback on all your online transactions, we are expanding in-store too very soon. Cashback varies from 2% to 40% depending on what is offered from partner websites and this cashback can be redeemed to your bank account/ digital wallet.</p>
+
+            <h3>What are the steps required to earn Cashback on SaveMonk?</h3>
+            <p class="pa">
+              It’s just a simple 4 step procedure to earn cashback on SaveMonk.<br><br>
+              Step-1: Visit SaveMonk before doing any online shopping.<br>
+              Step-2: Sign Up on SaveMonk.<br>
+              Step-3: Find the store and click on “Activate Rewards” button and complete your purchase on merchants’s website.<br><br>
+
+
+              And that’s it, you’re done. Our tracking software automatically tracks your transaction within 24 hours and you’ll be credited your cashback in your SaveMonk account which you can transfer it to your bank account later.
+            </p>
+      </div>
+      </div>
+      <!--subscription and social media-->
+      <div class="container">
+        <div class="jumbotron">
+          <div class="row">
+            <div class=" gf sdg col-md-6">
+              <p class="para">Subscribe Now to Get the best deals right in your inbox</p><br>
+              <input type="email" style="margin: 0px; border-radius: 3px; border: 1px solid rgb(35, 43, 255);" placeholder="Enter your Email Id"><br><br>
+              <button class="btn email-submit" type="submit" value="Subscribe" ng-click="HomeCtrl.subscribeEmail()" ng-disabled="HomeCtrl.buttondisabled">Subscribe</button>
+               
+
+            </div>
+            <div class=" gf col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <p style="color:black; font-size: 18px; margin-left: 20px;">
+                  Like us on Facebook</p><br>
+                  <span style="margin-left: 80px;" class="fa fa-facebook fa-5x"></span>
+
+                </div>
+                <div class="col-md-6">
+                   <p style="color:black; font-size: 18px; margin-left:20px;">
+                 Follow us on Twitter</p><br>
+                 
+
+
+                 <!--
+                 <a style="text-decoration:none;"class="hgf" href="#">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>Follow</a>
+                  </div>-->  <span style="margin-left: 80px;" class="fa fa-twitter fa-5x"></span>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+
+
+
+<!-- parallax effect on image-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box">
+<div class=" row-footer footer-parallax">
+        <div class="container" style="padding-left: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="width: 100%;margin-bottom: 15px;">
+                    <!--
+                    <section>
+                        <div class="container news">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-offset-3">
+                                    <form novalidate>
+                                        <hgroup>
+                                            <h2 style="color: #BDBDBD">
+                                                Subscribe for
+                                                <select class="frequency" ng-init="FootCtrl.options[0]" data-ng-model="FootCtrl.subscription_type" data-ng-options="option for option in FootCtrl.options">
+                                                
+                                            </select> newsletter
+                                            </h2>
+                                        </hgroup>
+                                        <div class="">
+                                            <input data-ng-model="FootCtrl.email_id" class="btn btn-lg btn-mobile" style="background-color:white;color:black;width: 300px;padding: 10px 10px 10px 10px;" name="email" id="email" type="email" placeholder="Your Email" required>
+                                            <button class="btn btn-info btn-lg" style="height: 60px;" ng-click="FootCtrl.email_subscribe();">Submit</button>
+                                        </div>
+                                    </form>
+                                    <br>
+                                    <small class="promise"><em>We won't send spam.</em></small>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr style="border-color:#263238;">
+                    -->
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <ul>
+                        <h5 class="text-col" style="font-family: 'Montserrat'; color:white;">HOT STORES</h5>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'flipkart' })" class="text-gray74" title="Flipkart" href="/store/flipkart/rates">Flipkart</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'myntra'})" class="text-gray74" title="Snapdeal" href="/store/myntra/rates">Myntra</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'amazon'})" class="text-gray74" title="Amazon" href="/store/amazon/rates">Amazon</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'shopclues'})" class="text-gray74" title="Shopclues" href="/store/shopclues/rates">Shopclues</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'paytm'})" class="text-gray74" title="PayTM" href="/store/paytm/rates">PayTM</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'makemytrip'})" class="text-gray74" title="MakeMyTrip" href="/store/makemytrip/rates">MakeMyTrip</a></li>
+                        <br>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <ul>
+                        <h5 class="text-col" style="font-family: 'Montserrat'">TOP CASHBACK STORES</h5>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'abof'})" class="text-gray74" title="Abof" href="/store/abof/rates">Abof</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'zivame'})" class="text-gray74" title="Zivame" href="/store/zivame/rates">Zivame</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'jabong'})" class="text-gray74" title="Jabong" href="/store/jabong/rates">Jabong</a></li>
+                        <li class="ul-li"><a ui-sref="store.rates({storeName: 'netmeds'})" class="text-gray74" title="NetMeds" href="/store/netmeds/rates">NetMeds</a></li>
+                    </ul>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <ul>
+                        <h5 class="text-col" style="font-family: 'Montserrat'">ABOUT SAVEMONK</h5>
+                        <li class="ul-li"><a ui-sref="About-Us" class="text-gray74" href="/about-us">About Us</a></li>
+                        <li class="ul-li"><a ui-sref="AccSet.Invite-Friends" class="text-gray74" href="/accset/invite-friends">Refer and Earn</a></li>
+                        <li class="ul-li"><a ui-sref="faq" class="text-gray74" href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <ul>
+                        <h5 class="text-col" style="font-family: 'Montserrat'">MISCELLANEOUS</h5>
+                        <li class="ul-li"><a ui-sref="tandc" class="text-gray74" href="/terms-and-conditions">Terms and Conditions</a></li>
+                        <li class="ul-li"><a ui-sref="privpol" class="text-gray74" href="/privacy-policy">Privacy Policy </a></li>
+
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-xs-12">
+                    <hr style="border-color:#263238;">
+                    <p style="font-size: 18px; color: navajowhite " align="middle">FOLLOW US ON SOCIAL MEDIA</p>
+                    <p class="follow-links" style="font-size: 30px;" align="middle">
+                        <a href="https://www.facebook.com/SaveMonkIndia/" class="fa fa-facebook" target="_blank" title="facebook"></a>
+                        <a href="https://twitter.com/SaveMonkIndia" class="fa fa-twitter" target="_blank" title="twitter"></a>
+                        <a href="https://www.instagram.com/savemonk/" class="fa fa-instagram" target="_blank" title="instagram"></a>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="col-xs-12" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));position: absolute;width: 100%;bottom: 0px;">
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

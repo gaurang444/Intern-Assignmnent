@@ -1,0 +1,182 @@
+
+.some{
+	padding-bottom: 15px;
+}
+.jumbotron .pa{
+	font-size: 16px;
+	margin-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: #616161;
+}
+.jumbotron h3{
+	font-weight: bold;
+	font-size: 24px;
+}
+.gf{
+	
+	height: 180px;
+}
+.sdg{
+	border-right: 2px solid black;
+}
+.sdg .para{
+	font-weight: bold;
+	color: black;
+	font-size: 18px;
+}
+.gf input{
+	padding: 5px;
+	width: 300px;
+	height: 40px;
+
+}
+.gf button{
+	width: 300px;
+	height: 40px;
+	padding: 5px;
+	text-align: center;
+	background: rgba(30,150,200,1);
+}
+
+.gf button:hover{
+	width: 300px;
+	height: 40px;
+	padding: 5px;
+	text-align: center;
+	background: #e0e0e0;
+
+}
+.hgf{
+	color: white;
+
+}
+.banner-text-1 {
+    padding: 15px 0px 0px 0px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: #E91E63;
+}
+.banner-text-2 {
+    padding: 0px 0px 15px 0px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: #757575;
+    }
+.sv-panel-heading {
+    width: 100%;
+    padding: 2px;
+    background: rgb(247, 76, 76);
+    color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+#mycarousel {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.carousel-box {
+    box-shadow: 3px 3px 3px #E0E0E0;
+    border: solid 1px #E0E0E0;
+}
+.carousel {
+    position: relative;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+#mycarousel .carousel-control.left, #mycarousel .carousel-control.right {
+    background: white;
+    background-image: none;
+    opacity: 1;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    border-radius: 5px;
+}
+#mycarousel .carousel-control.right {
+    margin-left: -5px;
+}
+#textcarousel {
+    padding: 30px;
+    background: white;
+    margin-bottom: 20px;
+}
+.carousel {
+    position: relative;
+}
+.footer-parallax {
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row-footer {
+    background-color: #263238!important;
+    margin: 0px auto;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://clashofmagic.net/img/xlanding-2.jpg.pagespeed.ic.2mHHmY2dvS.png);
+}
+.box{
+	width: 100%;
+}
+.box .row-footer ul li a{
+	color: #bdbdbd;
+	text-decoration: none;
+}
+.box .row-footer ul h5{
+	color: white;
+}
+.box .row-footer ul li{
+	list-style: none;
+}
+#textcarousel .watermark img {
+    position: absolute;
+    z-index: 1;
+    height: 140%;
+    right: 0;
+    top: -20%;
+}
+img {
+    object-fit: cover;
+}
+img {
+    vertical-align: middle;
+}
+.nopadding{
+	margin-left: 60px;
+}
+body div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.noapdding{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.scv{
+	height: 150px;
+	border: 1px solid red;
+	border-radius: 3px ;
+	margin-right: 25px;
+}
+.contain{
+	padding-bottom: 60px;
+}
